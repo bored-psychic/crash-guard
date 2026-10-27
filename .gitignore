@@ -1,0 +1,22 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+web/dist/
+*.log
+yolov8n.pt
+
+# CTOL run trace (regenerated each run); the convergence PNG in docs/ is kept
+data/ctol_trace.jsonl
+
+# real datasets are large + license-restricted — keep the folder, not the footage
+data/datasets/*
+!data/datasets/.gitkeep
+
+# bulky or regenerated data
+data/clips/
+data/tracks/
+data/labels/
+data/vlm_cache/

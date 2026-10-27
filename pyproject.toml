@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+# auto => async test functions run under asyncio without per-test markers
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-q"

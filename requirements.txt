@@ -1,0 +1,11 @@
+# CrashGuard dependencies — each line justified (project rule).
+numpy                    # trajectory vector math + the universal frame arrays
+ultralytics              # YOLOv8n detection + ByteTrack tracking (the SEE stage)
+opencv-python-headless   # video decode + frame->JPEG encode (no GUI needed)
+anthropic                # hosted VLM confirmation + CTOL's LLM proposer
+fastapi                  # ALERT backend: SSE stream + REST control
+uvicorn                  # ASGI server that runs FastAPI
+sse-starlette            # Server-Sent Events response helper for /events
+matplotlib               # CTOL convergence plot (the "it tuned itself" slide)
+pytest                   # the per-phase verification oracle
+pytest-asyncio           # async tests for the stream / VLM background task
